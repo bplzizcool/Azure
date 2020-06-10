@@ -1,3 +1,10 @@
+Azure IoT Hub
+
+PiHubDevice-BLane
+?Primary Connection String: 
+HostName=PiHub-BLane.azure-devices.net;DeviceId=PiHubDevice-BLane;SharedAccessKey=JQgXwMaIFK6UjYGvQknldXHpWfPy30w5vSUz3P5vg90=
+
+
 Trucks
 
 ID scope: 0ne00113C4C
@@ -12,3 +19,5 @@ Primary key: sZfzVcM1WFTnNDSZ2/6MXA/rtCXJ/YBJiFXg/DEgpTo=
 
 HostName=iotc-7f76653c-8dd7-4377-8337-2ed411ea0a6b.azure-devices.net;DeviceId=RefrigeratedTruck1;SharedAccessKey=sZfzVcM1WFTnNDSZ2/6MXA/rtCXJ/YBJiFXg/DEgpTo 
 
+
+Azure Maps Primary Key: K1fTOnwpmdkMpooU0gIXErMjswrblAsyhZsvph4FZIE
