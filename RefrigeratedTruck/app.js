@@ -2,11 +2,28 @@
 
 "use strict";
 const chalk = require('chalk');
-const truckNum = 1;
+const truckNum = 2;
 
 var truckIdentification = "Truck number " + truckNum;
 
-var connectionString = "HostName=iotc-7f76653c-8dd7-4377-8337-2ed411ea0a6b.azure-devices.net;DeviceId=RefrigeratedTruck1;SharedAccessKey=sZfzVcM1WFTnNDSZ2/6MXA/rtCXJ/YBJiFXg/DEgpTo";
+// Commenting this out to use multiple connection strings
+//var connectionString = "HostName=iotc-7f76653c-8dd7-4377-8337-2ed411ea0a6b.azure-devices.net;DeviceId=RefrigeratedTruck1;SharedAccessKey=sZfzVcM1WFTnNDSZ2/6MXA/rtCXJ/YBJiFXg/DEgpTo";
+var connectionString;
+
+switch (truckNum) {
+    case 1:
+        connectionString = "HostName=iotc-7f76653c-8dd7-4377-8337-2ed411ea0a6b.azure-devices.net;DeviceId=RefrigeratedTruck1;SharedAccessKey=sZfzVcM1WFTnNDSZ2/6MXA/rtCXJ/YBJiFXg/DEgpTo";
+        break;
+
+    case 2:
+        connectionString = "HostName=iotc-7f76653c-8dd7-4377-8337-2ed411ea0a6b.azure-devices.net;DeviceId=RefrigeratedTruck2;SharedAccessKey=WfFBqgQW7dPDzFCkhuF+MLqPLRv4LFZuUX3uJx8cOI8";
+        break;
+
+    case 3:
+        connectionString = "HostName=iotc-7f76653c-8dd7-4377-8337-2ed411ea0a6b.azure-devices.net;DeviceId=RefrigeratedTruck3;SharedAccessKey=COs8MVYgRaag1/vvsxUdHk7/Y2B9X+n1c5cwNPIM2FI";
+        break;
+}
+
 
 function greenMessage(text) {
     console.log(chalk.green(text));
