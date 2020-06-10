@@ -5,20 +5,34 @@ PiHubDevice-BLane
 HostName=PiHub-BLane.azure-devices.net;DeviceId=PiHubDevice-BLane;SharedAccessKey=JQgXwMaIFK6UjYGvQknldXHpWfPy30w5vSUz3P5vg90=
 
 
-Trucks
+Trucks:
 
 Scope ID: 0ne00113C4C
 
+RefrigeratedTruck - 1
 Device ID: RefrigeratedTruck1
-
 Primary key: sZfzVcM1WFTnNDSZ2/6MXA/rtCXJ/YBJiFXg/DEgpTo=
+Cloud Shell Connection String: ./dps_cstr 0ne00113C4C RefrigeratedTruck1 sZfzVcM1WFTnNDSZ2/6MXA/rtCXJ/YBJiFXg/DEgpTo= > connection1.txt
+IoT Central device connection string: HostName=iotc-7f76653c-8dd7-4377-8337-2ed411ea0a6b.azure-devices.net;DeviceId=RefrigeratedTruck1;SharedAccessKey=sZfzVcM1WFTnNDSZ2/6MXA/rtCXJ/YBJiFXg/DEgpTo 
+
+
+RefrigeratedTruck - 2
+Device ID: RefrigeratedTruck2
+Primary key: WfFBqgQW7dPDzFCkhuF+MLqPLRv4LFZuUX3uJx8cOI8=
+Cloud Shell Connection String: ./dps_cstr 0ne00113C4C RefrigeratedTruck2 WfFBqgQW7dPDzFCkhuF+MLqPLRv4LFZuUX3uJx8cOI8= > connection2.txt
+IoT Central device connection string: HostName=iotc-7f76653c-8dd7-4377-8337-2ed411ea0a6b.azure-devices.net;DeviceId=RefrigeratedTruck2;SharedAccessKey=WfFBqgQW7dPDzFCkhuF+MLqPLRv4LFZuUX3uJx8cOI8
+
+
+
+RefrigeratedTruck - 3
+Device ID: RefrigeratedTruck3
+Primary key: COs8MVYgRaag1/vvsxUdHk7/Y2B9X+n1c5cwNPIM2FI=
+Cloud Shell Connection String: ./dps_cstr 0ne00113C4C RefrigeratedTruck3 COs8MVYgRaag1/vvsxUdHk7/Y2B9X+n1c5cwNPIM2FI= > connection3.txt
+IoT Central device connection string: HostName=iotc-7f76653c-8dd7-4377-8337-2ed411ea0a6b.azure-devices.net;DeviceId=RefrigeratedTruck3;SharedAccessKey=COs8MVYgRaag1/vvsxUdHk7/Y2B9X+n1c5cwNPIM2FI
 
 
 ./dps_cstr 0ne00113C4C RefrigeratedTruck1 sZfzVcM1WFTnNDSZ2/6MXA/rtCXJ/YBJiFXg/DEgpTo= > connection1.txt
 
-
-IoT Central device connection string:
-HostName=iotc-7f76653c-8dd7-4377-8337-2ed411ea0a6b.azure-devices.net;DeviceId=RefrigeratedTruck1;SharedAccessKey=sZfzVcM1WFTnNDSZ2/6MXA/rtCXJ/YBJiFXg/DEgpTo 
 
 
 Azure Maps Primary Key: K1fTOnwpmdkMpooU0gIXErMjswrblAsyhZsvph4FZIE
