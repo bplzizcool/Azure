@@ -7,7 +7,7 @@ HostName=PiHub-BLane.azure-devices.net;DeviceId=PiHubDevice-BLane;SharedAccessKe
 
 Trucks
 
-ID scope: 0ne00113C4C
+Scope ID: 0ne00113C4C
 
 Device ID: RefrigeratedTruck1
 
@@ -17,6 +17,7 @@ Primary key: sZfzVcM1WFTnNDSZ2/6MXA/rtCXJ/YBJiFXg/DEgpTo=
 ./dps_cstr 0ne00113C4C RefrigeratedTruck1 sZfzVcM1WFTnNDSZ2/6MXA/rtCXJ/YBJiFXg/DEgpTo= > connection1.txt
 
 
+IoT Central device connection string:
 HostName=iotc-7f76653c-8dd7-4377-8337-2ed411ea0a6b.azure-devices.net;DeviceId=RefrigeratedTruck1;SharedAccessKey=sZfzVcM1WFTnNDSZ2/6MXA/rtCXJ/YBJiFXg/DEgpTo 
 
 
