@@ -1,0 +1,19 @@
+My IoT Hub: BLaneHub
+
+iotHubName='BLaneHub'
+az iot hub create --name $iotHubName --resource-group learn-3857b5a1-c74f-472c-89ba-4a8b8721292b --sku S1
+
+az iot hub device-identity create --hub-name $iotHubName --device-id TruckDevice
+az iot hub device-identity create --hub-name $iotHubName --device-id AirplaneDevice
+az iot hub device-identity create --hub-name $iotHubName --device-id ContainerDevice
+
+az iot hub device-identity show-connection-string --hub-name $iotHubName --device-id TruckDevice --output tsv
+az iot hub device-identity show-connection-string --hub-name $iotHubName --device-id AirplaneDevice --output tsv
+az iot hub device-identity show-connection-string --hub-name $iotHubName --device-id ContainerDevice --output tsv
+
+dotnet add package Microsoft.Azure.Devices.Client
+dotnet add package Microsoft.Azure.Devices.Shared
+dotnet add package Newtonsoft.Json
+
+BLaneEnviro
+blanestorage
